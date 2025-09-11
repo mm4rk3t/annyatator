@@ -1,0 +1,12 @@
+[*] Running Ultralytics...
+run_ultralytics
+Traceback (most recent call last):
+  File "C:\Users\Manuel\Desktop\Aimeye\AmazingAnnotator\orchestrator.py", line 32, in <module>
+    main()
+  File "C:\Users\Manuel\Desktop\Aimeye\AmazingAnnotator\orchestrator.py", line 18, in main
+    results["ultralytics"] = run_ultralytics(cfg["ultralytics"], dataset)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Manuel\Desktop\Aimeye\AmazingAnnotator\runners\ultralytics.py", line 22, in run_ultralytics
+    return {"id": run_id, "log": str(log_file), "weights": str(outdir / "weights")}
+                  ^^^^^^
+NameError: name 'run_id' is not defined

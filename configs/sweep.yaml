@@ -1,0 +1,18 @@
+dataset: ../data.yaml
+
+ultralytics:
+  model: yolov8n.pt
+  epochs: 50
+  imgsz: 640
+
+yolonas:
+  model: yolonas_s
+  epochs: 50
+  imgsz: 640
+
+darknet:
+  bin_dir: ./darknet
+  data: datasets/my_dataset/obj.data
+  cfg: cfg/yolov4.cfg
+  weights: weights/yolov4.conv.137
+  gpu: 0
