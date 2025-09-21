@@ -7,7 +7,7 @@ def run_yolonas(cfg, dataset):
     outdir.mkdir(parents=True, exist_ok=True)
 
     cmd = [
-        "python", "train.py",  # adjust to your YoloNAS entrypoint
+        "python3", "train.py",  # adjust to your YoloNAS entrypoint
         "--model", cfg["model"],
         "--data", dataset,
         "--epochs", str(cfg["epochs"]),

@@ -17,16 +17,16 @@ def main():
     print("[*] Running Ultralytics...")
     results["ultralytics"] = run_ultralytics(cfg["ultralytics"], dataset)
 
-    print("[*] Running YoloNAS...")
-    results["yolonas"] = run_yolonas(cfg["yolonas"], dataset)
+    # print("[*] Running YoloNAS...")
+    # results["yolonas"] = run_yolonas(cfg["yolonas"], dataset)
 
-    print("[*] Running Darknet...")
-    results["darknet"] = run_darknet(cfg["darknet"], dataset)
+    # print("[*] Running Darknet...")
+    # results["darknet"] = run_darknet(cfg["darknet"], dataset)
 
     Path("results").mkdir(exist_ok=True)
     with open("results/summary.json", "w") as f:
         json.dump(results, f, indent=2)
-    print("[✓] Sweep complete. Results saved to results/summary.json")
+    print("[OK] Sweep complete. Results saved to results/summary.json")
 
 if __name__ == "__main__":
     main()

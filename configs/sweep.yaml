@@ -1,4 +1,4 @@
-dataset: ../data.yaml
+dataset: data.yaml
 
 ultralytics:
   model: yolov8n.pt

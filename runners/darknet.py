@@ -2,6 +2,7 @@ import subprocess, os, time
 from pathlib import Path
 
 def run_darknet(cfg, dataset):
+    """
     run_id = f"darknet_{int(time.time())}"
     outdir = Path("results/runs") / run_id
     outdir.mkdir(parents=True, exist_ok=True)
@@ -20,3 +21,4 @@ def run_darknet(cfg, dataset):
                        stdout=f, stderr=subprocess.STDOUT, text=True)
 
     return {"id": run_id, "log": str(log_file), "weights": str(outdir / "weights")}
+    """
